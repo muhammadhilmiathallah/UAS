@@ -7,11 +7,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #333; 
 }
 
 li {
   float: left;
+  
 }
 
 li a {
@@ -26,6 +27,10 @@ li a:hover:not(.active) {
   background-color: #111;
 }
 
+li.login {
+  float: left;
+  padding-left: 10px; /* Adjust the padding as needed */
+}
 .active {
   background-color: #04AA6D;
 }
@@ -36,3 +41,35 @@ li a:hover:not(.active) {
   border: 1px solid green;
 }
 
+p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+}
+body {
+            font-family: Arial, sans-serif;
+			text-align: center;
+            margin: 20px;
+        }
+
+        .profile {
+            display: flex;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            max-width: 500px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .profile-details {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }

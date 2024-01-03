@@ -1,52 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
-<head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-</head>
-<body>
-	<section class="center">
-		<div class="text-center">
-		
-			
-			<h1 class="font-weight-bold">Voting Application</h1>
-			
-			<div th:if=${session.msg}>
-			<h3 th:text="${session.msg}" style="color:red"></h3>
-   			<th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="center">
+      <div class="text-center">
+        <h1 class="font-weight-bold">Voting Application</h1>
 
-		
-   
-   		</div>	
-	
-		</div>
-		
-		<div class="bg-white">
-			<div class="container mx-auto">
-			  <h1 class="text-center text-4xl text-extrabold font-poppins pt-8 md:pt-10 pb-5 mb:pb-0 px-20">
-				<strong class="text-black">Our Headquarter</strong>
-				
-			  </h1>
-			  <div class="grid grid-cols-1 gap-10 mt-4 mb-16 ml-10 mr-10 md:grid-cols-3 text-center">
-				<div class="border bg-gray-200 shadow-lg rounded-md text-center">
-				  <a href="#"><i class="fa-solid fa-house-user text-7xl pt-3 hover:text-amber-500"></i></a>
-				  <h1 class="mt-2 mb-1 font-poppins text-center">Tangerang Selatan</h1>
-				  <h4 class="mt-2 mb-3 font-poppins text-center text-sm text-gray-500"></h3>
-				</div>
-				<div class="border bg-gray-200 shadow-lg rounded-md text-center">
-				  <a href="#"><i class="fa-solid fa-house-user text-7xl pt-3 hover:text-amber-500"></i></a>
-				  <h1 class="mt-2 mb-1 font-poppins text-center">Jakarta Selatan</h1>
-				  <h4 class="mt-2 mb-3 font-poppins text-center text-sm text-gray-500"></h3>
-				</div>
-				<div class="border bg-gray-200 shadow-lg rounded-md text-center">
-				  <a href="#"><i class="fa-solid fa-house-user text-7xl pt-3 hover:text-amber-500"></i></a>
-				  <h1 class="mt-2 mb-1 font-poppins text-center">Jakarta Barat</h1>
-				  <h4 class="mt-2 mb-3 font-poppins text-center text-sm text-gray-500"></h3>
-					
-				</div>
-			  </div>
-			</div>
-		  </div>
-	</section>
-</body>
+        <div class="profile">
+          <img th:src="@{'/image/aniesmuhaimin.png'}" style="height: 500px" alt="aniesmuhaimin" />
+          <div class="profile-details">
+            <h2>Anies&Muhaimin</h2>
+            <h3>Visi</h3>
+            <p>Indonesia Adil Makmur untuk Semua</p>
+            <h3>Misi</h3>
+            <p>1. Memastikan ketersediaan kebutuhan pokok dan biaya hidup murah melalui kemandirian pangan, ketahanan energi, dan kedaulatan air</p>
+            <p>
+              2. Mengentaskan kemiskinan dengan memperluas kesempatan berusaha dan menciptakan lapangan kerja, mewujudkan upah berkeadilan, menjamin kemajuan ekonomi berbasis kemandirian dan pemerataan, serta mendukung korporasi Indonesia
+              berhasil di negeri sendiri dan bertumbuh di kancah global
+            </p>
+            <p>3. Mewujudkan keadilan ekologis berkelanjutan untuk generasi mendatang</p>
+            <p>4. Mewujudkan manusia Indonesia yang sehat, cerdas, produktif, berakhlak, serta berbudaya</p>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img th:src="@{'/image/prabowogibran.png'}" style="height: 500px" alt="prabowogibran" />
+          <div class="profile-details">
+            <h2>Prabowo&Gibran</h2>
+            <h3>Visi</h3>
+            <p>Bersama Indonesia Maju Menuju Indonesia Emas 2045</p>
+            <h3>Misi</h3>
+            <p>1. Memperkokoh ideologi Pancasila, demokrasi, dan hak asasi manusia (HAM).</p>
+            <p>2. Memantapkan sistem pertahanan keamanan negara dan mendorong kemandirian bangsa melalui swasembada pangan, energi, air, ekonomi kreatif, ekonomi hijau, dan ekonomi biru.</p>
+            <p>3. Melanjutkan hilirisasi dan industrialisasi untuk meningkatkan nilai tambah di dalam negeri.</p>
+            <p>4. Memperkuat pembangunan sumber daya manusia (SDM), sains, teknologi, pendidikan, kesehatan, prestasi olahraga, kesetaraan gender, serta penguatan peran perempuan, pemuda, dan penyandang disabilitas.</p>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img th:src="@{'/image/ganjarmahfud.png'}" style="height: 500px" alt="ganjarmahfud" />
+          <div class="profile-details">
+            <h2>Ganjar&Mahfud</h2>
+            <h3>Visi</h3>
+            <p>Menuju Indonesia Unggul Gerak Cepat Mewujudkan Negara Maritim yang Adil dan Lestari</p>
+            <h3>Misi</h3>
+            <p>1. Mempercepat Pembangunan Manusia Indonesia Unggul yang Berkualitas, Produktif, dan Berkepribadian</p>
+            <p>2. Mempercepat Pemerataan Pembangunan Ekonomi</p>
+            <p>3. Mempercepat Pembangunan Sistem Digital Nasional</p>
+            <p>4. Mempercepat Perwujudan Lingkungan Hidup yang Berkelanjutan Melalui Ekonomi Hijau dan Biru</p>
+          </div>
+        </div>
+
+        <div th:if="${session.msg}">
+          <h3 th:text="${session.msg}" style="color: red"></h3>
+          <th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
