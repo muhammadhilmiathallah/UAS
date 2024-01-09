@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
-<head>
+<!-- <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
 </head>
@@ -23,4 +23,69 @@
 	<br>	
 	</section>
 </body>
+</html> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vouter</title>
+	<style>
+		
+		section {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 30px;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+      }
+
+	</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nama Website Anda</h1>
+        <p>Slogan atau deskripsi singkat tentang website Anda.</p>
+    </header>
+
+    <section class="about-section">
+			<h2 style="text-align: center;">About US</h2>
+		
+        <p>
+            Selamat datang di <span class="highlight">Vouter Application</span>! Kami adalah tim yang berdedikasi untuk
+            memberikan pengalaman terbaik kepada pengunjung kami.
+        </p>
+
+        <p>
+            
+Website Voters adalah platform yang didedikasikan untuk memfasilitasi proses pemilihan dengan cara yang mudah, 
+transparan, dan aman. Tujuannya adalah memberikan pengalaman pemilihan yang efisien dan menghubungkan pemilih dengan proses demokrasi dengan lebih baik. 
+        </p>
+
+		<p>
+			Voters menyediakan informasi lengkap tentang setiap kandidat yang berpartisipasi dalam pemilihan. Profil kandidat, visi-misi, dan rencana kerja mereka dapat diakses dengan mudah, membantu pemilih membuat keputusan yang informasional.
+
+		</p>
+
+        <div class="team-members">
+            <div class="team-member">
+                <img th:src="@{'/image/hilmi.jpg'}"  alt="hilmi" />
+                <p>Muhammad Hilmi Athallah</p>
+                <p>2112500364</p>
+            </div>
+            <div class="team-member">
+                <img th:src="@{'/image/silah.jpg'}"  alt="silah" />
+                <p>Wasilah Ulul Azmi</p>
+                <p>2112500406</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Nama Website Anda. All rights reserved.
+    </footer>
+
+</body>
+
 </html>
