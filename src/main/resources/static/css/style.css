@@ -73,3 +73,67 @@ body {
         h2, h3 {
             color: #333;
         }
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+          color: #333;
+        }
+        
+        header {
+          background-color: #3498db;
+          color: #fff;
+          text-align: center;
+          padding: 50px 0;
+        }
+        
+        .about-section {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 30px;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          border-radius: 8px;
+        }
+        
+        h1, h2 {
+          color: #333;
+        }
+        
+        p {
+          color: #555;
+          font-size: 1.1em;
+          line-height: 1.8;
+        }
+        
+        .highlight {
+          color: #3498db;
+          font-weight: bold;
+        }
+        
+        .team-members {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 30px;
+        }
+        
+        .team-member {
+          text-align: center;
+        }
+        
+        .team-member img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 10px;
+        }
+        
+        footer {
+          text-align: center;
+          padding: 20px 0;
+          background-color: #3498db;
+          color: #fff;
+        }
